@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "partner_id": "example-partner",
+  "display_name": "Example Partner",
+  "website": "https://example.com",
+  "categories": [
+    "travel"
+  ],
+  "countries": [
+    "CZ",
+    "IT"
+  ],
+  "integration": {
+    "modes": [
+      "affiliate-link",
+      "api"
+    ],
+    "docs_url": "https://example.com/developers"
+  },
+  "commercial": {
+    "model": "negotiated",
+    "public_terms_url": "https://example.com/partners"
+  },
+  "contact": {
+    "partnership_url": "https://example.com/partners"
+  }
+}
