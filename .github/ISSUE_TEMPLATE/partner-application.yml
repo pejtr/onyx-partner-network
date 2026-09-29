@@ -1,0 +1,50 @@
+name: Partner application
+description: Propose a commercial, affiliate, API or MCP partnership.
+title: "[PARTNER] "
+labels:
+  - partner
+body:
+  - type: input
+    id: company
+    attributes:
+      label: Company / project
+    validations:
+      required: true
+  - type: input
+    id: website
+    attributes:
+      label: Website
+      placeholder: https://example.com
+    validations:
+      required: true
+  - type: dropdown
+    id: model
+    attributes:
+      label: Partnership model
+      options:
+        - Affiliate
+        - Revenue share
+        - CPA / CPL
+        - API integration
+        - MCP integration
+        - Hybrid / other
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: What value can we create together?
+    validations:
+      required: true
+  - type: textarea
+    id: integration
+    attributes:
+      label: Integration details
+      description: Public technical information only. Do not paste credentials, secrets or private contract terms.
+  - type: checkboxes
+    id: security
+    attributes:
+      label: Security
+      options:
+        - label: I confirm this issue contains no secrets, credentials or customer data.
+          required: true
