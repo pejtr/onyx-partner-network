@@ -44,6 +44,12 @@ The commercial terms are agreed per partner or program. This repository does **n
 - Local businesses and venues
 - Financially compliant affiliate programs
 - APIs, MCP servers and integration providers
+- Games, advergames and interactive experiences through [MENTHOSOFT](docs/MENTHOSOFT_GAME_STUDIO.md)
+
+## Commercial network layers
+
+- [Business Site Network](docs/BUSINESS_SITE_NETWORK.md) — how focused sites become connected revenue nodes.
+- [MENTHOSOFT Game Studio](docs/MENTHOSOFT_GAME_STUDIO.md) — game development, advergames and interactive properties.
 
 ## Start here
 
