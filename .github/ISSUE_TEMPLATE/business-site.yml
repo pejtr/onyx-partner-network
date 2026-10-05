@@ -1,0 +1,55 @@
+name: Business site node
+description: Propose a new business site for the ONYX distribution network
+title: "[Site] "
+labels: ["site-node"]
+body:
+  - type: input
+    id: domain
+    attributes:
+      label: Domain
+      placeholder: example.cz
+    validations:
+      required: true
+  - type: dropdown
+    id: archetype
+    attributes:
+      label: Archetype
+      options:
+        - Lead marketplace
+        - Affiliate intent
+        - Digital product
+        - SaaS utility
+        - Media / content
+        - Game / interactive
+    validations:
+      required: true
+  - type: textarea
+    id: intent
+    attributes:
+      label: User intent
+      description: What specific problem or buying intent does the site serve?
+    validations:
+      required: true
+  - type: textarea
+    id: monetization
+    attributes:
+      label: Monetization route
+      description: What is the first valid revenue path?
+    validations:
+      required: true
+  - type: textarea
+    id: synergy
+    attributes:
+      label: Network synergy
+      description: Which existing ONYX sites, audiences or partner offers can this node strengthen?
+    validations:
+      required: true
+  - type: checkboxes
+    id: guardrails
+    attributes:
+      label: Launch guardrails
+      options:
+        - label: No secrets or private commercial terms are included in this public issue.
+          required: true
+        - label: Paid distribution stays disabled until the conversion route is verified.
+          required: true

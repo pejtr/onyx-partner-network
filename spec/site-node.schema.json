@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/pejtr/onyx-partner-network/spec/site-node.schema.json",
+  "title": "ONYX Business Site Node",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "site_id", "display_name", "website", "archetype", "monetization", "distribution"],
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0" },
+    "site_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9.-]{1,95}$" },
+    "display_name": { "type": "string", "minLength": 1, "maxLength": 120 },
+    "website": { "type": "string", "format": "uri" },
+    "archetype": {
+      "enum": ["lead-marketplace", "affiliate-intent", "digital-product", "saas-utility", "media-content", "game-interactive"]
+    },
+    "categories": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "monetization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["models"],
+      "properties": {
+        "models": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "enum": ["affiliate", "cpl", "cpa", "subscription", "direct-sale", "sponsorship", "ads", "hybrid"] }
+        },
+        "status": { "enum": ["experiment", "organic-validation", "active"] }
+      }
+    },
+    "distribution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["channels"],
+      "properties": {
+        "channels": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "enum": ["seo", "direct", "social", "partner-network", "omniads", "paid-search", "paid-social"] }
+        },
+        "omni_ads_site_key": { "type": "string", "pattern": "^[a-z0-9][a-z0-9.-]{1,95}$" }
+      }
+    },
+    "synergies": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[a-z0-9][a-z0-9.-]{1,95}$" }
+    }
+  }
+}

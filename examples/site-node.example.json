@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "site_id": "example.cz",
+  "display_name": "Example Business Site",
+  "website": "https://example.cz/",
+  "archetype": "lead-marketplace",
+  "categories": ["local-services"],
+  "monetization": {
+    "models": ["cpl", "subscription"],
+    "status": "organic-validation"
+  },
+  "distribution": {
+    "channels": ["seo", "partner-network", "omniads"],
+    "omni_ads_site_key": "example.cz"
+  },
+  "synergies": ["example-partner.cz"]
+}
