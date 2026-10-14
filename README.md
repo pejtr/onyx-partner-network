@@ -92,3 +92,10 @@ See [SECURITY.md](SECURITY.md). If you discover a vulnerability or accidentally 
 ---
 
 Built as the public integration edge of the **ONYX / OPTIMATEO** ecosystem.
+
+
+## Agent handoff
+
+This repository is public. Before changing it, read `README.md`, `TODO.md`, `AGENTS.md`, `SECURITY.md` and `docs/PUBLIC_REPO_NO_TRUST.md`.
+
+Public documentation must describe **public contracts only**. Internal infrastructure, private data, proprietary decision logic and non-public commercial information stay outside this repository.

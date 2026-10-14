@@ -13,3 +13,17 @@ If a report contains sensitive details, do not open a public GitHub issue. Conta
 - Webhooks should be authenticated and replay-resistant.
 - Partner capabilities should follow least privilege.
 - Production ONYX OS internals are intentionally outside this public repository.
+
+
+## Public documentation threat model
+
+Documentation is part of the attack surface.
+
+Before merge:
+- use placeholders instead of real infrastructure/account identifiers,
+- do not expose internal topology or privileged recovery paths,
+- do not publish private partner/user data or non-public economics,
+- run secret scanning where available,
+- review changed docs as permanent public disclosure.
+
+See `docs/PUBLIC_REPO_NO_TRUST.md`.
